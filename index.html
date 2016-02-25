@@ -251,10 +251,12 @@
 <ol>
 <li><p>下载<a href="http://sourceforge.net/projects/git-osx-installer/" target="_blank" rel="external">Git Mac版</a>并安装。</p>
 </li>
-<li><p>下载<a href="https://nodejs.org/en/" target="_blank" rel="external">odejs Mac版</a>并安装。</p>
+<li><p>下载<a href="https://nodejs.org/en/" target="_blank" rel="external">nodejs Mac版</a>并安装。</p>
 </li>
 <li><p>使用npm安装Hexo。</p>
- <figure class="highlight xquery"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$sudo</span> npm install -g hexo-cli</span><br></pre></td></tr></table></figure></li>
+ <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo npm <span class="operator"><span class="keyword">install</span> -<span class="keyword">g</span> hexo-cli</span></span><br></pre></td></tr></table></figure>
+<p> 经测试时，不使用sudo会提示无法创建文件。</p>
+</li>
 <li>初始化Hexo目录并创建网站，<folder>为指定的文件夹目录，不存在的话需要先创建。 <figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>hexo init &lt;folder&gt;</span><br><span class="line"><span class="variable">$ </span>cd &lt;folder&gt;</span><br><span class="line"><span class="variable">$ </span>npm install</span><br></pre></td></tr></table></figure>
  新建完成后，指定的文件夹目录如下： <figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">├── _config.yml</span><br><span class="line">├── package.json</span><br><span class="line">├── scaffolds</span><br><span class="line">├── source</span><br><span class="line"><span class="string">|   ├── _drafts</span></span><br><span class="line"><span class="string">|   └── _posts</span></span><br><span class="line">└── themes</span><br></pre></td></tr></table></figure>
  _config.yml为网站配置文件，可配置相关参数。</folder></li>
