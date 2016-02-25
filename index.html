@@ -3,19 +3,19 @@
 <head>
   <meta charset="utf-8">
   
-  <title>zhyb&#39;s</title>
+  <title>Zhyb&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description">
+  <meta name="description" content="iOS Dev Share">
 <meta property="og:type" content="website">
-<meta property="og:title" content="zhyb's">
+<meta property="og:title" content="Zhyb's Blog">
 <meta property="og:url" content="http://zhybs.github.io/index.html">
-<meta property="og:site_name" content="zhyb's">
-<meta property="og:description">
+<meta property="og:site_name" content="Zhyb's Blog">
+<meta property="og:description" content="iOS Dev Share">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="zhyb's">
-<meta name="twitter:description">
+<meta name="twitter:title" content="Zhyb's Blog">
+<meta name="twitter:description" content="iOS Dev Share">
   
-    <link rel="alternative" href="/atom.xml" title="zhyb&#39;s" type="application/atom+xml">
+    <link rel="alternative" href="/atom.xml" title="Zhyb&#39;s Blog" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
@@ -64,6 +64,8 @@
           <h1 class="header-author"><a href="/">Raymond</a></h1>
         </hgroup>
 
+        
+        <p class="header-subtitle">zhaoyubin&#39;s blog</p>
         
                 
 
@@ -190,6 +192,8 @@
               <h1 class="header-author"><a href="/" title="回到主页">Raymond</a></h1>
             </hgroup>
             
+            <p class="header-subtitle">zhaoyubin&#39;s blog</p>
+            
             <nav class="header-menu">
                 <ul>
                 
@@ -247,7 +251,7 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p>hello,大家好，我的技术博客开通了，欢迎大家前来参观。😀<br>安装过程如下：</p>
+        <p>hello,大家好，我的技术博客开通了，欢迎大家前来参观。😀<br>首先将博客的开启历程与大家分享下。<br>Hexo安装过程如下：</p>
 <ol>
 <li><p>下载<a href="http://sourceforge.net/projects/git-osx-installer/" target="_blank" rel="external">Git Mac版</a>并安装。</p>
 </li>
@@ -255,11 +259,13 @@
 </li>
 <li><p>使用npm安装Hexo。</p>
  <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo npm <span class="operator"><span class="keyword">install</span> -<span class="keyword">g</span> hexo-cli</span></span><br></pre></td></tr></table></figure>
-<p> 经测试时，不使用sudo会提示无法创建文件。</p>
+<p> 经测试，不使用sudo会提示无法创建文件。</p>
 </li>
-<li>初始化Hexo目录并创建网站，<folder>为指定的文件夹目录，不存在的话需要先创建。 <figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>hexo init &lt;folder&gt;</span><br><span class="line"><span class="variable">$ </span>cd &lt;folder&gt;</span><br><span class="line"><span class="variable">$ </span>npm install</span><br></pre></td></tr></table></figure>
+<li>初始化Hexo目录并创建网站，”<folder>“为指定的文件夹目录，不存在的话需要先创建。 <figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>hexo init &lt;folder&gt;</span><br><span class="line"><span class="variable">$ </span>cd &lt;folder&gt;</span><br><span class="line"><span class="variable">$ </span>npm install</span><br></pre></td></tr></table></figure>
  新建完成后，指定的文件夹目录如下： <figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">├── _config.yml</span><br><span class="line">├── package.json</span><br><span class="line">├── scaffolds</span><br><span class="line">├── source</span><br><span class="line"><span class="string">|   ├── _drafts</span></span><br><span class="line"><span class="string">|   └── _posts</span></span><br><span class="line">└── themes</span><br></pre></td></tr></table></figure>
  _config.yml为网站配置文件，可配置相关参数。</folder></li>
+<li>使用vim打开_config.yml进行网站配置。 <figure class="highlight makefile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Site</span></span><br><span class="line">title: Zhyb's Blog</span><br><span class="line">subtitle: zhaoyubin's blog</span><br><span class="line">description: iOS Dev Share</span><br><span class="line">author: Raymond</span><br><span class="line"><span class="title">language:</span></span><br><span class="line"><span class="title">timezone:</span></span><br></pre></td></tr></table></figure>
+</li>
 </ol>
 
       
