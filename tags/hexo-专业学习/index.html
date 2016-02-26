@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Zhyb&#39;s Blog</title>
+  <title>Tag: hexo 专业学习 | Zhyb&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="iOS Dev Share">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Zhyb's Blog">
-<meta property="og:url" content="http://zhybs.github.io/index.html">
+<meta property="og:url" content="http://zhybs.github.io/tags/hexo-专业学习/index.html">
 <meta property="og:site_name" content="Zhyb's Blog">
 <meta property="og:description" content="iOS Dev Share">
 <meta name="twitter:card" content="summary">
@@ -28,9 +28,6 @@
   <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   
-    
-    
-  
   
       <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
   
@@ -38,10 +35,10 @@
       var yiliaConfig = {
           fancybox: true,
           animate: true,
-          isHome: true,
+          isHome: false,
           isPost: false,
           isArchive: false,
-          isTag: false,
+          isTag: true,
           isCategory: false,
           open_in_new: false
       }
@@ -224,81 +221,52 @@
 </nav>
       <div class="body-wrap">
   
-    <article id="post-mywebsite" class="article article-type-post" itemscope itemprop="blogPost">
   
-    <div class="article-meta">
-      <a href="/2016/02/24/mywebsite/" class="article-date">
-      <time datetime="2016-02-24T09:23:50.000Z" itemprop="datePublished">2016-02-24</time>
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2016" class="archive-year">2016</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+          <div class="article-meta">
+              <a href="/2016/02/24/mywebsite/" class="archive-article-date">
+      <time datetime="2016-02-24T09:23:50.000Z" itemprop="datePublished">02-24</time>
 </a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
+        </div>
+         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2016/02/24/mywebsite/">zhyb&#39;s bog 开启记录</a>
+      <a class="archive-article-title" href="/2016/02/24/mywebsite/">zhyb&#39;s bog 开启记录</a>
     </h1>
   
 
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
+        <div class="article-info info-on-archive">
           
-        <p>hello,大家好，我的技术博客开通了，欢迎大家前来参观。😀<br>首先将博客的开启历程与大家分享下。<br>Hexo安装过程如下：</p>
-<ol>
-<li><p>下载<a href="http://sourceforge.net/projects/git-osx-installer/" target="_blank" rel="external">Git Mac版</a>并安装。</p>
-</li>
-<li><p>下载<a href="https://nodejs.org/en/" target="_blank" rel="external">nodejs Mac版</a>并安装。</p>
-</li>
-<li><p>使用npm安装Hexo。</p>
- <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo npm <span class="operator"><span class="keyword">install</span> -<span class="keyword">g</span> hexo-cli</span></span><br></pre></td></tr></table></figure>
-<p> 经测试，不使用sudo会提示无法创建文件。</p>
-</li>
-<li>初始化Hexo目录并创建网站，”folder”为指定的文件夹目录，不存在的话需要先创建。 <figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>hexo init &lt;folder&gt;</span><br><span class="line"><span class="variable">$ </span>cd &lt;folder&gt;</span><br><span class="line"><span class="variable">$ </span>npm install</span><br></pre></td></tr></table></figure>
- 新建完成后，指定的文件夹目录如下： <figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">├── _config.yml</span><br><span class="line">├── package.json</span><br><span class="line">├── scaffolds</span><br><span class="line">├── source</span><br><span class="line"><span class="string">|   ├── _drafts</span></span><br><span class="line"><span class="string">|   └── _posts</span></span><br><span class="line">└── themes</span><br></pre></td></tr></table></figure>
- _config.yml为网站配置文件，可配置相关参数。</li>
-<li>使用vim打开_config.yml进行网站配置。 <figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">title</span>: Zhyb's Blog</span><br><span class="line"><span class="attribute">subtitle</span>: zhaoyubin's blog</span><br><span class="line"><span class="attribute">description</span>: iOS Dev Share</span><br><span class="line"><span class="attribute">author</span>: Raymond</span><br><span class="line"><span class="attribute">language</span>:</span><br><span class="line"><span class="attribute">timezone</span>:</span><br></pre></td></tr></table></figure></li>
-<li>下载 <a href="https://hexo.io/themes/" target="_blank" rel="external">Themes</a>并使用 <figure class="highlight gherkin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git clone https://github.com/<span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span>  themes/<span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span></span><br><span class="line">$ cd themes/<span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span></span><br><span class="line">$ git pull</span><br></pre></td></tr></table></figure></li>
-<li>修改 _config.yml 的 theme 配置项为 <em>**</em><figure class="highlight vala"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor"># Extensions</span></span><br><span class="line"><span class="preprocessor">## Plugins: http://hexo.io/plugins/</span></span><br><span class="line"><span class="preprocessor">## Themes: http://hexo.io/themes/</span></span><br><span class="line">theme: yelee</span><br></pre></td></tr></table></figure>
-在此感谢<a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" rel="external">yelee</a>提供的主题。</li>
-</ol>
 
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
+          
     <div class="article-tag tagcloud">
         <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo-专业学习/">hexo 专业学习</a></li></ul>
     </div>
 
-      
-      <div class="clearfix"></div>
-    </div>
-    
+        </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
-  
 </article>
-
-
-
-
-
-
-
-
   
   
+    </div></section>
+  
+
+    
+
 </div>
       <footer id="footer">
     <div class="outer">
@@ -370,6 +338,17 @@
         };
     })
 </script>
+
+    <button class="hide-labels">TAG 开关</button>
+    <script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js">
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("button").click(function() {
+                $(".article-info").toggle(200);
+            });
+        });
+    </script>
 
 
 <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
