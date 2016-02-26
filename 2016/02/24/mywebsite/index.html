@@ -15,7 +15,7 @@
  1$ sudo npm install -g hexo-cli
  经测试，不使用sudo会提示无法创建文件。
 
-初始化Hexo目录并创建网站，”“为指定的文件夹目录，不存在的话需要">
+初始化Hexo目录并创建网站，”folder”为指定的文件夹目录，不">
 <meta property="og:type" content="article">
 <meta property="og:title" content="zhyb's bog 开启记录">
 <meta property="og:url" content="http://zhybs.github.io/2016/02/24/mywebsite/index.html">
@@ -30,8 +30,8 @@
  1$ sudo npm install -g hexo-cli
  经测试，不使用sudo会提示无法创建文件。
 
-初始化Hexo目录并创建网站，”“为指定的文件夹目录，不存在的话需要">
-<meta property="og:updated_time" content="2016-02-25T11:13:41.000Z">
+初始化Hexo目录并创建网站，”folder”为指定的文件夹目录，不">
+<meta property="og:updated_time" content="2016-02-26T03:10:34.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="zhyb's bog 开启记录">
 <meta name="twitter:description" content="hello,大家好，我的技术博客开通了，欢迎大家前来参观。😀首先将博客的开启历程与大家分享下。Hexo安装过程如下：
@@ -44,7 +44,7 @@
  1$ sudo npm install -g hexo-cli
  经测试，不使用sudo会提示无法创建文件。
 
-初始化Hexo目录并创建网站，”“为指定的文件夹目录，不存在的话需要">
+初始化Hexo目录并创建网站，”folder”为指定的文件夹目录，不">
   
     <link rel="alternative" href="/atom.xml" title="Zhyb&#39;s Blog" type="application/atom+xml">
   
@@ -294,12 +294,12 @@
  <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo npm <span class="operator"><span class="keyword">install</span> -<span class="keyword">g</span> hexo-cli</span></span><br></pre></td></tr></table></figure>
 <p> 经测试，不使用sudo会提示无法创建文件。</p>
 </li>
-<li>初始化Hexo目录并创建网站，”<folder>“为指定的文件夹目录，不存在的话需要先创建。 <figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>hexo init &lt;folder&gt;</span><br><span class="line"><span class="variable">$ </span>cd &lt;folder&gt;</span><br><span class="line"><span class="variable">$ </span>npm install</span><br></pre></td></tr></table></figure>
+<li>初始化Hexo目录并创建网站，”folder”为指定的文件夹目录，不存在的话需要先创建。 <figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>hexo init &lt;folder&gt;</span><br><span class="line"><span class="variable">$ </span>cd &lt;folder&gt;</span><br><span class="line"><span class="variable">$ </span>npm install</span><br></pre></td></tr></table></figure>
  新建完成后，指定的文件夹目录如下： <figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">├── _config.yml</span><br><span class="line">├── package.json</span><br><span class="line">├── scaffolds</span><br><span class="line">├── source</span><br><span class="line"><span class="string">|   ├── _drafts</span></span><br><span class="line"><span class="string">|   └── _posts</span></span><br><span class="line">└── themes</span><br></pre></td></tr></table></figure>
- _config.yml为网站配置文件，可配置相关参数。</folder></li>
+ _config.yml为网站配置文件，可配置相关参数。</li>
 <li>使用vim打开_config.yml进行网站配置。 <figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">title</span>: Zhyb's Blog</span><br><span class="line"><span class="attribute">subtitle</span>: zhaoyubin's blog</span><br><span class="line"><span class="attribute">description</span>: iOS Dev Share</span><br><span class="line"><span class="attribute">author</span>: Raymond</span><br><span class="line"><span class="attribute">language</span>:</span><br><span class="line"><span class="attribute">timezone</span>:</span><br></pre></td></tr></table></figure></li>
 <li>下载 <a href="https://hexo.io/themes/" target="_blank" rel="external">Themes</a>并使用 <figure class="highlight gherkin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git clone https://github.com/<span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span>  themes/<span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span></span><br><span class="line">$ cd themes/<span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span></span><br><span class="line">$ git pull</span><br></pre></td></tr></table></figure></li>
-<li>修改 _config.yml 的 theme 配置项为 <em>*</em><figure class="highlight vala"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor"># Extensions</span></span><br><span class="line"><span class="preprocessor">## Plugins: http://hexo.io/	plugins/</span></span><br><span class="line"><span class="preprocessor">## Themes: http://hexo.io/	themes/</span></span><br><span class="line">theme: yelee</span><br></pre></td></tr></table></figure>
+<li>修改 _config.yml 的 theme 配置项为 <em>**</em><figure class="highlight vala"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor"># Extensions</span></span><br><span class="line"><span class="preprocessor">## Plugins: http://hexo.io/plugins/</span></span><br><span class="line"><span class="preprocessor">## Themes: http://hexo.io/themes/</span></span><br><span class="line">theme: yelee</span><br></pre></td></tr></table></figure>
 在此感谢<a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" rel="external">yelee</a>提供的主题。</li>
 </ol>
 
@@ -313,7 +313,7 @@
         <p><span>本文标题:</span><a href="/2016/02/24/mywebsite/">zhyb&#39;s bog 开启记录</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 Raymond 的个人博客">Raymond</a></p>
         <p><span>发布时间:</span>2016年02月24日 - 17时23分</p>
-        <p><span>最后更新:</span>2016年02月25日 - 19时13分</p>
+        <p><span>最后更新:</span>2016年02月26日 - 11时10分</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2016/02/24/mywebsite/" title="zhyb&#39;s bog 开启记录">http://zhybs.github.io/2016/02/24/mywebsite/</a>
             <span class="copy-path" data-clipboard-text="原文: http://zhybs.github.io/2016/02/24/mywebsite/　　作者: Raymond" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
