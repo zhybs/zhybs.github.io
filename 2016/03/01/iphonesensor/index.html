@@ -84,8 +84,11 @@
 <div class="intrude-less">
     <header id="header" class="inner">
         <a href="/" class="profilepic">
-            <img src="/img/avatar.png" class="animated zoomIn">
+            
+            <img lazy-src="/img/avatar.png" class="js-avatar">
+            
         </a>
+
         <hgroup>
           <h1 class="header-author"><a href="/">Raymond</a></h1>
         </hgroup>
@@ -210,7 +213,9 @@
     <div class="intrude-less">
         <header id="header" class="inner">
             <a href="/" class="profilepic">
-                <img src="/img/avatar.png" class="animated zoomIn">
+                
+                    <img lazy-src="/img/avatar.png" class="js-avatar">
+                
             </a>
             <hgroup>
               <h1 class="header-author"><a href="/" title="回到主页">Raymond</a></h1>
@@ -467,7 +472,7 @@
     (function() {
         var ds = document.createElement('script');
         ds.type = 'text/javascript';ds.async = true;
-        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.src = 'http://zhybs.github.com/public/js/embed.js';
         ds.charset = 'UTF-8';
         (document.getElementsByTagName('head')[0] 
          || document.getElementsByTagName('body')[0]).appendChild(ds);
