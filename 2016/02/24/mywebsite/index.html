@@ -56,11 +56,11 @@ Hexo安装过程
   
   
   <link rel="stylesheet" href="/css/style.css" type="text/css">
-  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css" type="text/css">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   
   
-      <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+    <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
   
   <script>
       var yiliaConfig = {
@@ -71,9 +71,16 @@ Hexo安装过程
           isArchive: false,
           isTag: false,
           isCategory: false,
-          open_in_new: false
+          open_in_new: false,
       }
   </script>
+
+  
+      <script>
+          yiliaConfig.rootUrl = "/";
+      </script>
+  
+
   
       <script>
           var _hmt = _hmt || [];
@@ -93,11 +100,8 @@ Hexo安装过程
 <div class="intrude-less">
     <header id="header" class="inner">
         <a href="/" class="profilepic">
-            
-            <img lazy-src="/img/avatar.png" class="js-avatar">
-            
+            <img src="/img/avatar.png" class="animated zoomIn">
         </a>
-
         <hgroup>
           <h1 class="header-author"><a href="/">Raymond</a></h1>
         </hgroup>
@@ -222,9 +226,7 @@ Hexo安装过程
     <div class="intrude-less">
         <header id="header" class="inner">
             <a href="/" class="profilepic">
-                
-                    <img lazy-src="/img/avatar.png" class="js-avatar">
-                
+                <img src="/img/avatar.png" class="animated zoomIn">
             </a>
             <hgroup>
               <h1 class="header-author"><a href="/" title="回到主页">Raymond</a></h1>
@@ -480,7 +482,7 @@ Hexo安装过程
     (function() {
         var ds = document.createElement('script');
         ds.type = 'text/javascript';ds.async = true;
-        ds.src = 'http://zhybs.github.com/js/embed.js';
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
         ds.charset = 'UTF-8';
         (document.getElementsByTagName('head')[0] 
          || document.getElementsByTagName('body')[0]).appendChild(ds);
